@@ -26,9 +26,11 @@ JMP_INDEX   EQU 01
 OPPS_INDEX  EQU 02
 ENMY_H_INIT EQU 08
 ENMY_W_INIT EQU 08
+PLAYER_SHOT EQU 00  ; Couldn't figure out how to set up   
 POINTS      EQU 01
 SPACEBAR    EQU $20
 ESCAPE      EQU $1B
+RIGHT       EQU $39 ; For the shoot mechanic
 
 INITIALISE:
     BSR     RUN_LOAD
@@ -471,6 +473,7 @@ ENEMY_Y         DS.L    01
 
 
     END    START        ; last line of source
+
 
 
 *~Font name~Courier New~
